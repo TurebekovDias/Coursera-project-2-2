@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    background-color: antiquewhite;
+  }
+  
+  header {
+    background-color: rgb(192, 192, 192);
+    text-align: center;
+  }
+  
+  nav {
+    background-color: rgb(212, 210, 187);
+    text-align: center;
+    display: inline-block;
+    width: 80%;
+  }
+  
+  /* Стилизация только изображений внутри nav */
+  nav img {
+    width: 10%;
+    /* При необходимости можно добавить: position: relative; top: 20px; */
+  }
+  
+  main {
+    background-color: antiquewhite;
+    font-size: 90%;
+  }
+  
+  footer {
+    background-color: bisque;
+  }
+  
+  /* Исходное правило для li закомментировано, чтобы не влиять на разметку */
+   /*
+  li {
+    display: inline-table;
+    width: 200px;
+  }
+  */
+  
+  h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(180, 255, 221);
+  }
+  
+  p {
+    line-height: 10;
+  }
+  
+  img {
+    width: 500px;
+  }
+  
+  /* Стили для ссылки "Перейти к основному содержанию" */
+  .skip-link {
+    position: absolute;
+    left: -1000px;
+    top: -1000px;
+  }
+  
+  .skip-link:focus {
+    left: 10px;
+    top: 10px;
+    background: #fff;
+    padding: 5px;
+    z-index: 1000;
+  }
+  
+  /* Новые стили для класса grid */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+  }
+  
+  /* Только изображения внутри .grid получают ширину 100% */
+  .grid img {
+    width: 100%;
+  }
+  
+  /* Новые стили для класса flex */
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
